@@ -49,3 +49,11 @@ describe('Tickets', () => {
     expect(res.statusCode).toBe(404);
   });
 });
+
+describe('GET /version', () => {
+  test('renvoie une version', async () => {
+    const res = await request(app).get('/version');
+    expect(res.statusCode).toBe(200);
+    expect(res.body.version).toBeDefined();
+  });
+});
