@@ -1,5 +1,6 @@
 const express = require('express');
 const { creerStockage, PRIORITES } = require('./db');
+const { version } = require('./package.json');
 
 // Construit l'application Express. Le stockage est injectable (tests).
 function creerApp(stockage = creerStockage()) {
@@ -16,6 +17,9 @@ function creerApp(stockage = creerStockage()) {
       res.status(503).json({ status: 'ko', erreur: err.message });
     }
   });
+
+  app.get('/version', (_req, res) => res.json({ version }));
+
 
   app.get('/tickets', async (_req, res, next) => {
     try {
