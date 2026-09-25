@@ -59,3 +59,5 @@ function creerApp(stockage = creerStockage()) {
 }
 
 module.exports = { creerApp };
+
+const inutile = 42;.
