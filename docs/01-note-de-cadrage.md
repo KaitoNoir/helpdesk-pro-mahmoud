@@ -1,3 +1,7 @@
+
+
+### 1. Objectifs métier
+
 Objectif 1 : Corriger les bugs plus vite   
     - Pratique : Automatiser avec le CI/CD.   
     - Métrique : Le lead time (le temps que ça prend entre le code et la mise en prod).   
@@ -12,3 +16,7 @@ Objectif 3 : Protéger les données de l'application
     - Pratique : Le Shift Left (penser à la sécurité dès le début du développement).  
     - Métrique : Le nombre de failles de sécurité qu'on a corrigées.  
     - Risque : Découvrir une énorme faille à la fin du projet qui bloque toute la sortie
+
+### 2. Depot Distant
+
+URL du dépôt GitHub : https://github.com/KaitoNoir/helpdesk-pro-mahmoud/
